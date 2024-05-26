@@ -1,0 +1,6 @@
+tga files in steam folder need to be 16x16 and 32x32
+can copy the ico file to mod_big.tga file becuase its 32x32
+convert the ico file to tga then resize it to 16x16 ex VampireSlayer.tga
+ copy mod_big.tga to resource folder and rename it icon_steam.tga
+
+small tga = 16x16 and big tga is 32x32
