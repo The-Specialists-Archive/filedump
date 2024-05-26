@@ -1,0 +1,437 @@
+/~XDEMENTORX'S/~
+
+      -~SEND THIS GUIDE TO ALL OF YOUR FRIENDS~-    /       --ENT/MOD GUIDE--  (Edited)           
+
+______________________________________________________/___________/___________________________
+
+Instructions (If you dont know already): 1.Left-Click +grabent and -grabent
+
+                                         2.Right-Click destroys object you are looking at.
+
+Ok..to start off when u have entmod (type in these commands). 
+
+1.setinfo _entpass
+
+2.weapon_entmover
+
+3.entmod_noclip
+
+4.entmod_noclip 0
+
+5.bind +copyent
+
+6.bind "e_use"
+
+7.to take mover off type lastinv in console
+
+________________________________________________________________________
+
+To save type these in order.
+
+1.es_start          es_listall   shows all of the saves        es_list shows the saves on that map
+
+2.es_grab  (bind it)
+
+3.es_save (1 or 0) 1 comes in mm_grab   0 saves in place
+
+_________________________________________________________________________________________
+
+How to use mm_grab. (to move multiple objects)
+
+1. mm_start
+
+2. mm_grab (bind it)         Some may stay green just put in e_render 4 to make it normal
+
+3. mm_end
+
+_________________________________________________________________________________________
+
+To add teleporters, type these in order  (any name)
+
+e_telestart
+
+e_teleend
+
+e_teledelete
+
+_________________________________________________________________________________________
+
+This command is to add weapons of any kind.
+
+e_add ts_groundweapon:origin:%HERE%:tsweaponid::spawnflags:63:wduration:1:wextraclip:300: 
+
+NOTE:to delete guns its e_kill ts_groundweapon :NOTE:to add a message to the guns its :message: :NOTE:to save guns its  es_grab ts_groundweapon
+
+1: "Glock 18" 
+
+3: "Mini Uzi"                     
+
+4: "Benelli M3"
+
+5: "M4A1"
+
+6: "MP5SD"
+
+7: "MP5K"
+
+8: "Akimbo Berettas"
+
+9: "Socom Mk23"                     WEAPON ID'S
+
+11: "Usas12"
+
+12: "Desert Eagle"
+
+13: "Ak47"
+
+14: "FiveSeven"
+
+15: "Steyr Aug"
+
+17: "Steyr Tmp"
+
+18: "Barrett M82"
+
+19: "HK Pdw"
+
+20: "Spas12"
+
+21: "Akimbo colts"
+
+22: "Glock 20"
+
+23: "UMP"
+
+25: "Combat Knife"
+
+26: "Mossberg 500"
+
+27: "M16A4"
+
+28: "Ruger Mk1"
+
+24: "M61 Grenade"
+
+29: "C4"
+
+31: "Raging Bull"
+
+32: "M60"
+
+33: "Sawed off"
+
+34: "Katana"
+
+35: "Seal Knife"
+
+_____________________________________________________________________________________
+
+To make objects breakable type this in console~(while looking at them)Follow Steps.
+
+1.e_classname func_breakable
+
+2.entmod_keyvalue material 1-8 
+
+0- Glass (default)
+
+ 1- Wood
+
+  2- Metal
+
+   3- Flesh
+
+    4- Cinder Block
+
+     5- Ceiling Tile
+
+      6- Computer
+
+       7- Unbreakable Glass
+
+        8- Rocks
+
++copyent the object (dont make too many or will crash; they will come back)(They dont come back in Sven Coop)
+
+_____________________________________________________________________________________
+
+These commands make ent'ing go faster by toppling the objects (up and side ways; depends on rotations).~ 
+
+e_stack 1
+
+e_stack 1 128
+
+e_stack 1 0 0 128 
+
+_____________________________________________________________________________________
+
+To make text areas type these in order.(Need a a good fit object)
+
+1.e_classname trigger_multiple                 To es_grab it = es_grab trigger_mulitple
+
+2.entmod_keyvalue message "message"
+
+3.Look at object and hold in +copyent button, then drag that object from the text area and delete that object (RUN THROUGH THE TEXT AREA)
+
+___________________________________________________________________________________________________________________________________________________________________
+
+To make water, put these commands in order.(before u do, put in the e_renders)e_render 1 100 0 0 100 255 (blue, put on top)          What is to render?
+
+Also to use e_render is on the right of this guide>>>>                        e_render 5 0 (invisble, put on bottom)                 To render is to change the color
+
+                                                                                                                                     of the object. 
+
+                                                                                                                           ~Try it~     ---1. e_render 4 is normal
+
+                                                                                                                                        ---2. e_render 1 1 1 1 1 1 1 (any repeating numbers will make it blink on and off)supposively  ....is that a word?                     
+
+            
+
+1.entmod_keyvalue skin -3  (0 is normal, -4 is toxic, -5 is lava) 
+
+2.e_classname func_illusionary
+
+3.+copyent the object         
+
+To save the entity type in = es_grab func_illusionary (RANGE)
+
+To move the water type this in = Grabtype func_illusionary (RANGE)     (range should be around 100)
+
+To delete the entity = e_kill func_illusionary (RANGE)
+
+_____________________________________________________________________________________
+
+Renders.
+
+e_render 
+
+Blue:    1 255 0 0 0 255
+
+Pink:    1 255 0 255 0 255
+
+Purple:  1 255 0 160 0 255
+
+Grey:    1 255 0 141 141 141
+
+Black:   1 255 0 0 0 0
+
+Yellow:  1 255 0 255 255 0
+
+Green:   1 255 0 0 255 0
+
+Orange:  1 255 0 255 80 0
+
+Red:     1 255 0 255 0 0
+
+White:   1 255 0 255 255 255
+
+HoloGram:5 255 16 
+
+________________________________________________________________________________________
+
+How to make cameras
+
+1. On the button (like a TV) put this in =  e_classname func_rot_button entmod_keyvalue target targetcam
+
+2.This is Where u put your camera (No Limits) =  e_add trigger_camera:origin:%HERE%:wait:3:delay:1:spawnflags:4:target:camera:targetname:targetcam
+
+3.This is what your camera will be looking at = e_add info_target:origin:%HERE%:targetname:camera
+
+_____________________________________________________________________________________ 
+
+To make icey floors.Follow steps.
+
+1.e_classname func_friction
+
+2.entmod_keyvalue percentage 25   (glitchy)
+
+_____________________________________________________________________________________
+
+How to make bombs. Follow steps.(may crash if you make too many)
+
+1.entmod_keyvalue explodemagnitude 150 or more/less
+
+2.e_classname func_breakable
+
+3.copy the object  (original object is not breakable or lets just say its not destroyable)
+
+_____________________________________________________________________________________
+
+How to make Unsolid walls.Follow steps.
+
+1.This is like water commands. = e_classname func_illusionary  (If u want, you can make it water or something)
+
+2.+copyent
+
+_____________________________________________________________________________________
+
+How to Make a button.Follow steps.(for doors and shiz)
+
+1.get a button(look at it and type) = e_classname func_rot_button
+
+2.then save the button (delete it) load it..
+
+3.on button type = entmod_keyvalue target
+
+4.then get a door and type = entmod_keyvalue targetname     BAM! you have a button/door
+
+________________________________________________________________________________________________________________
+
+How to Make A button to a Wall(from solid to unsolid).Follow steps.
+
+1.Have a button and a wall ready
+
+2.On button, type = e_classname func_rot_button (copy+delete it)
+
+3.on wall, type = e_classname func_wall_toggle (copy+delete it)
+
+4.On button type = entmod_keyvalue target
+
+5. on wall type = entmod_keyvalue targetname
+
+_____________________________________________________________________________________
+
+How to use train(making objects move in a trail you make).
+
+1.get any object then look at it or get inside of it and type = t_select
+
+2.then type t_start
+
+3.BE CAREFUL, RIGHT WHEN YOU TYPE IN T_START YOU ARE TO MAKE THE TRAIL OF THE OBJECT!!
+
+GO everywhere ..up down left right ....
+
+4.when u are done with the trail type in = t_end 250 is default
+
+5.make it go by t_go; after that make it stop and go by using e_use 
+
+You can add this train to a button by using the same name of the train with the same name of a button.
+
+_____________________________________________________________________________________
+
+How to make healing spots or killing spots.Follow steps.
+
+1.get an object any object. Then = e_classname trigger_hurt
+
+2.entmod_keyvalue dmg -1000 or 1000          (- heals, and no negative hurts)
+
+3.entmod_keyvalue damagetype (ID)   ------below-----
+
+4.+copy (delete is optional)
+
+1 - CRUSH
+
+2 - BULLET
+
+4 - SLASH
+
+8 - BURN
+
+16 - FREEZE
+
+32 - FALL
+
+64 - BLAST
+
+128 - CLUB
+
+256 - SHOCK
+
+512 - SONIC
+
+1024 - ENERGYBEAM
+
+16384 - DROWN
+
+32768 - PARALYSE
+
+65536 - NERVEGAS
+
+131072 - POISON
+
+262144 - RADIATION
+
+524288 - DROWNRECOVER
+
+1048576 - CHEMICAL
+
+2097152 - SLOWBURN
+
+4194304 - SLOWFREEZE
+
+____________________________________________________________________________________
+
+How to make earthquakes.(Works in Sven Coop; Possibly in TS also)Follow steps.
+
+1.Get a big object and a button.
+
+2.On the big object type in = e_classname env_shake
+
+3.entmod_keyvalue radius 1000 (range)
+
+4.entmod_keyvalue duration 10 (time)
+
+5.entmod_keyvalue frequency 140.0  {0.1 = wings of a butterfly; 255.0 = rumble}
+
+6.entmod_keyvalue amplitude 1-16 (shake)
+
+7.Make this a targetname to a button (e_classname func_rot_button----entmod_keyvalue target shake----(on huge object)entmod_keyvalue targetname shake)
+
+_______________________________________________________________________________________________________________________________________________________
+
+How to make a good elevator.Follow Steps.
+
+1.On a floor or another object put in = e_classname func_plat
+
+2.entmod_keyvalue height -500 or 500 (determines how high or low the object goes)[without a - the elevator will go downwards]{with a - the elevator will go up}
+
+3.entmod_keyvalue spawnflags 17
+
+4.entmod_keyvalue targetname
+
+Make this to a target of a button with the same name of the elevator
+
+________________________________________________________________________________________________________________________________________________________________
+
+How to make a sound with a button.(k00l)
+
+1.Get a button
+
+2.e_classname func_button
+
+3.entmod_keyvalue target dew
+
+4.entmod_keyvalue unlocked_sentence 1
+
+5.entmod_keyvalue spawnflags 1
+
+6.+copyent ....save it; load it     As Emeril says, "BAM"
+
+________________________________________________________________________________________________________________________________________________________________________
+
+How to make objects Spin.Follow Steps
+
+1.Get an Object and = e_classname func_rotating
+
+2.entmod_keyvalue speed   (Choose whatever; experiment)
+
+3.entmod_keyvalue ##### (If u want to lose HP...If not skip this part)
+
+4.+copyent
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+_FOR OTHER COMMANDS GO HERE = http://entmod.aowc.net/main.asp?page=dp&dis=178426_______________________________________________________________________________________________________________________________________________________________________
+
+_---_^--____~--_--~--___--_--^-_--____--_-~---^___--_---~_--____--_----___--_--~-_--__^__--_----___--_---~_--____^--_----___~--_---~_--__~__--_---^-___~--_---_--_~___--^_----___--_--^-_-_--
+
+_---_--____--_----^___--_---_--____--^_----___-~-_---_--~____--_^----~___--~_---_--_~___--_----__^_--_~---_--___~_--_----___--_---^_--____--_----__~_--_--^-_--____--_----_^__--_---_-___
+
+GUIDE MADE BY XDEMENTORX
+
+AIM = Dementor369
+
+MSN = Dementor890@yahoo.com
+
+YAHOO = Dementor890
+
+EMAIL = Dementor890@yahoo.com
